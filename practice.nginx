@@ -2,7 +2,7 @@ server {
     listen 80;
     listen [::]:80;
 	# enter the actua server name at some poin TODO
-    server_name ;
+    server_name hw02b.abdul.gold;
 
     location / {
         proxy_pass http://localhost:4790;
