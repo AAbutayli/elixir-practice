@@ -21,5 +21,13 @@ defmodule Practice do
     [1,2,x]
   end
 
-  # TODO: Add a palindrome? function.
+  def palindrome(str) do
+    str1 = String.downcase(str, :default)
+    if String.reverse(str1) == str1 do
+     "The string #{str} is palindrome"
+    else
+     "The string #{str} is NOT palindrome"
+    end
+  end
+
 end
